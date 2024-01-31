@@ -1,0 +1,278 @@
+:root {
+    --main-bg-color: #222;
+    --main-font-color: #f6f8ff;
+    --black-font-color: #000000;
+    --hover-color: #8db570;
+    --hover-bg-color: ;
+}
+
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--main-bg-color); 
+    color: var(--main-font-color);
+}
+
+a {
+    text-decoration: none;
+    color: #f6f8ff;
+}
+
+a:hover {
+    color: #8db570;
+}
+
+/*
+.topsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 350px;
+    background-color: #7f8ca6;
+    margin-bottom: 50px;;
+}
+*/
+.pixel-header {
+    font-family: "Pixelify Sans", sans-serif;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.roboto-subheader {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.vsc {
+    width: 250px;
+    position: absolute;
+    left: 250px;
+    top: 262px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.figma {
+    width: 300px;
+    position: absolute;
+    right: 275px;
+    top: 250px;
+}
+
+.headshot {
+    border: 4px solid white;
+    border-radius: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    border: none;
+    width: 70%;
+    border-top: 15px dotted #454c5a;
+}
+nav {
+    background-color: #454c5a;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer {
+    background-color: #454c5a;
+    padding: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav a, footer a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover, footer a:hover {
+    border-radius: 5px;
+    background-color: #3a4955;
+}
+
+.three-col {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 600px) {
+    .three-col {
+        grid-template-columns: auto;
+    }
+}
+
+
+
+.one-col > * {
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    border-radius: 100px;
+    width: 100px;
+    transition: background-color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d2027;
+    color: white;
+}
+
+
+.card {
+    text-align: center;
+    padding: 0px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: #454c5a;
+    overflow: clip;
+    box-shadow: 5px 5px 5px grey;
+    transition: transform 0.2s ease-in-out;
+    color: white;
+}
+
+.card:hover {
+    transform: translateX(-3px) translateY(-3px);
+}
+
+.card > img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*
+.card > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.card > dl {
+    display: flex;
+    justify-content: center;
+}
+
+.card > h3 {
+    margin-top: 10px;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+*/
+.contactinfo, .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 4000;
+  font-size: 50px;
+  font-style: normal;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #35353533;
+    background-color: EAD7BB;
+    transition: 0.3s;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 #000000;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+.card, input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+
+.topsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 195px;
+    background-color: #7f8ca6;
+    margin-bottom: 50px;
+}
+
+.topsection img {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.topsection img.google,
+.topsection img.amazon {
+    width: 150px;
+    height: 150px;
+    margin: 0 5px;
+}
+
+.one-col{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 5px;
+    
+    padding: 20px;
+}
+
+.introcontact{
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 600px; 
+}
